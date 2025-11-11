@@ -1,7 +1,7 @@
 import streamlit as st
 import numpy as np
 
-st.title("🎮 Tic Tac Toe - AI vs Human")
+st.title("🎮 Tic Tac Toe by Tanmay , Ujjwal , Vaibhav")
 
 if 'board' not in st.session_state:
     st.session_state.board = [" "]*9
@@ -35,3 +35,4 @@ elif check_winner(st.session_state.board, "O"):
     st.error("💻 Computer wins!")
 elif all(cell != " " for cell in st.session_state.board):
     st.info("It's a draw!")
+
