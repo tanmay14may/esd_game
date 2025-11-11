@@ -75,7 +75,10 @@ def find_best_move(board):
 # ------------------ Streamlit UI ------------------
 
 st.title("🎮 Tic Tac Toe — Human (X) vs Computer (O)")
-st.caption("AI uses Minimax with Alpha-Beta pruning (impossible to beat)")
+st.caption("by Tanmay (2401330120202)")
+st.caption("by Ujjwal (2401330120204)")
+st.caption("by Vaibhav (2401330120208)")
+
 
 if "board" not in st.session_state:
     st.session_state.board = [[" " for _ in range(3)] for _ in range(3)]
@@ -125,3 +128,4 @@ if st.session_state.winner:
         st.info("🤝 It's a Draw!")
 
 st.button("🔄 Restart Game", on_click=restart)
+
